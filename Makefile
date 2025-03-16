@@ -14,4 +14,7 @@ $(BUILD)/fortnuts.o: src/main/windows/fortnuts.c
 clean:
 	rm -f *.exe
 	rm -f *.txt
+	rm -f *.zip
+	rm -f *.tar
+	rm -f *.gz
 	ls
