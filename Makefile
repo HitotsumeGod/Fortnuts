@@ -3,5 +3,7 @@ SRC=src/main
 DEPS=src/headers
 SRS=$(SRC)/pilot.c
 
-pilot: $(SRS)
+pilot.exe: $(SRS)
 	$(CC) -o $@ $^ -I $(DEPS)
+clean:
+	rm -rf *.exe
