@@ -24,6 +24,7 @@ int main(int argc, char *argv[]) {
 			return EXIT_FAILURE;
 		}
 		while (FindNextFile(winhandle, &wd) > 0) {
+			printf("%s\n", wd.cFileName);
 			if (wd.dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY)
 				;
 			else {
